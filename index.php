@@ -15,32 +15,18 @@
 </head>
 <body>
     <div class="uk-section uk-container">
-        <div class="uk-grid uk-child-width-1-3@s uk-child-width-1-1" uk-grid="">
-        <form class="uk-form-stacked js-login">
-
-            <div class="uk-margin">
-                <label class="uk-form-label" for="form-horizontal-text">Email</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input" id="form-horizontal-text" type="email" required="required" placeholder="email@email.com">
-                    </div>
-            </div>
-
-            <div class="uk-margin">
-                <label class="uk-form-label" for="form-horizontal-text">Password</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input" id="form-horizontal-text" type="password" required="required" placeholder="Your password">
-                    </div>
-            </div>
-
-            <div class="uk-margin">
-                <button class="uk-button uk-button-default" type="submit">Login</button>
-            </div>
-
-        </form>
-        </div>
+        <?php
+            echo "Hello World. Today is: ";
+            echo date("Y m d");
+        ?>
+        <p>
+            <a href="/login.php">Login</a>
+            <a href="/register.php">Register</a>
+        </p>
     </div>
+
+    <? php require_once "inc/footer.php"; ?>
+
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit-icons.min.js"></script>
+
 </html>
